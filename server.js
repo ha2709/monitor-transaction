@@ -36,6 +36,7 @@ class TransactionChecker {
                             let balance = await this.web3.eth.getBalance(accountAddress);
                             balance = this.web3.utils.fromWei(balance,'ether')
                             // we can call method to post balance value to Discord/Telegram at here. 
+                            // we set logic to check balance of account with balance threshold that we need to notify
                         }
                     }
                 } catch (err) {
